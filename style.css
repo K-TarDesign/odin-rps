@@ -1,0 +1,21 @@
+/* GLOBAL FORMAT */
+:root {
+    /* COLOR VARIABLES*/
+    --blackish: #3F3F3F;
+    --whitish: #F1F1F1;
+    --green: #529F3F;
+    --greenLight: #CCF1C3;
+    --red: #E04B4B;
+    --redLight: #FECCCC;
+}
+* {
+    background-color: var(--blackish);
+    color: var(--whitish);
+    font-family: Nobile, Arial, sans-serif;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+
+/* LOCAL FORMAT */
