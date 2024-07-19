@@ -3,6 +3,8 @@
     /* COLOR VARIABLES*/
     --blackish: #3F3F3F;
     --whitish: #F1F1F1;
+    --greyDark: #5d5d5d;
+    --greyLight: #B0B0B0;
     --green: #529F3F;
     --greenLight: #CCF1C3;
     --red: #E04B4B;
@@ -16,6 +18,35 @@
     border: 0;
     padding: 0;
 }
-
+#screenBG {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--blackish);
+    border: 5px solid var(--blackish);
+    /* FLEXBOX */
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+#display {
+    width: 1000px;
+    /* FLEXBOX */
+    display: flex;
+    flex-direction: column;
+}
 
 /* LOCAL FORMAT */
+.container {
+
+}
+
+.container.scores {
+    height: 250px;
+}
+
+.container.buttons {
+    height: 150px;
+}
+.container.graphics {
+    background-color: var(--greyDark);
+}
