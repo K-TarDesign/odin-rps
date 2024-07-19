@@ -21,32 +21,52 @@
 #screenBG {
     height: 100vh;
     width: 100%;
-    background-color: var(--blackish);
     border: 5px solid var(--blackish);
+    
     /* FLEXBOX */
     display: flex;
     justify-content: center;
     align-items: stretch;
 }
 #display {
-    width: 1000px;
+    height: 100vh;
+    
     /* FLEXBOX */
+    flex: 0 1 1000px;
     display: flex;
     flex-direction: column;
 }
 
 /* LOCAL FORMAT */
-.container {
-
+.container {                /* ALL CONTAINERS ARE FLEXBOXES */
+    display: flex;
 }
 
-.container.scores {
-    height: 250px;
+.container.scores {         /* ANNOUNCEMENT BOX */
+    
+
+    /* FLEXBOX */
+    flex: 0 1 250px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.container.buttons {
-    height: 150px;
+.container.buttons {        /* SCOREBOX */
+    
+
+    /* FLEXBOX */
+    flex: 0 3 150px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
 }
-.container.graphics {
+
+.container.graphics {       /* GRAPHICS DISPLAY BOX */
     background-color: var(--greyDark);
+    
+    /* FLEXBOX */
+    flex: 1 0 auto;
+    justify-content: space-evenly;
+    align-items: center;
 }
