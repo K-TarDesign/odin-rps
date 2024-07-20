@@ -81,8 +81,22 @@ h3 {
     align-items: center;
 }
 
+.container.scoreboard {
+    background-color: var(--whitish);
+    color: var(--blackish);
+    height: 250px;
+    border: 5px solid var(--blackish);
+
+    /* FLEXBOX */
+    flex: 0 1 500px;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+
 /* ASSETS */
 
+/* ACTION BUTTONS */
 button {
     height: 75px;
     width: 200px;
@@ -90,7 +104,43 @@ button {
     border: 5px solid var(--greenLight);
     border-radius: 30px;
 }
-
 button h3 {
     background-color: var(--green);
+}
+
+
+/* SCOREBOARD */
+.titleSB {
+    background-color: var(--whitish);
+    
+    /* FLEXBOX */
+    justify-content: space-evenly;
+    align-self: stretch;
+}
+.titleSB h3 {
+    background-color: var(--whitish);
+    color: var(--blackish);
+}
+.playersSB {
+
+    /* FLEXBOX */
+    flex: 1 1 auto;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+.playersSB h3   {
+    letter-spacing: 5px;
+}
+.scoreSB {
+    background-color: var(--whitish);
+
+    /* FLEXBOX */
+    flex: 1 1 250px;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.scoreSB h1 {
+    background-color: var(--whitish);
+    color: var(--blackish)
 }
