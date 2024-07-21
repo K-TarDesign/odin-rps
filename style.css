@@ -94,9 +94,9 @@ h3 {
 }
 
 
-/* ASSETS */
+/* --- ASSETS --- */
 
-/* ACTION BUTTONS */
+/* BUTTONS */
 button {
     height: 75px;
     width: 200px;
@@ -108,6 +108,16 @@ button h3 {
     background-color: var(--green);
 }
 
+.button_start {
+    height: 200px;
+    width: 200px;
+    color: var(--green);
+    background-color: var(--greenLight);
+    border-radius: 50%;
+    border: 10px solid var(--green);
+    font-size: 48px;
+    font-weight: bold;
+}
 
 /* SCOREBOARD */
 .titleSB {
@@ -121,7 +131,9 @@ button h3 {
     background-color: var(--whitish);
     color: var(--blackish);
 }
+
 .playersSB {
+    text-align: center;
 
     /* FLEXBOX */
     flex: 1 1 auto;
@@ -129,18 +141,36 @@ button h3 {
     align-items: stretch;
 }
 .playersSB h3   {
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 }
+
 .scoreSB {
     background-color: var(--whitish);
 
     /* FLEXBOX */
-    flex: 1 1 250px;
+    flex: 1 1 auto;
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
     
 }
 .scoreSB h1 {
     background-color: var(--whitish);
     color: var(--blackish)
+}
+.countSB {
+
+    /* FLEXBOX */
+    align-items: center;
+}
+#score_player {
+    border-right: 5px solid var(--blackish);
+
+    /* FLEXBOX */
+    flex: 1 1 auto;
+}
+#score_comp {
+    border-left: 5px solid var(--blackish);
+
+    /* FLEXBOX */
+    flex: 1 1 auto;
 }
