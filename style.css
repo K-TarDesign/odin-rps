@@ -76,7 +76,7 @@ h3 {
     border: 5px solid var(--blackish);
     
     /* FLEXBOX */
-    flex: 1 0 auto;
+    flex: 10 10 auto;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -98,14 +98,14 @@ h3 {
 
 /* BUTTONS */
 button {
-    height: 75px;
+    height: 60px;
     width: 200px;
+    color: var(--whitish);
     background-color: var(--green);
     border: 5px solid var(--greenLight);
     border-radius: 30px;
-}
-button h3 {
-    background-color: var(--green);
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .button_start {
