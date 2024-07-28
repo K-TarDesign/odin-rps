@@ -16,10 +16,13 @@
     border: 0;
     padding: 0;
 }
+.container {                /* ALL CONTAINERS ARE FLEXBOXES */
+    display: flex;
+}
 #screenBG {
     background-color: var(--blackish);
     color: var(--whitish);
-    height: 100vh;
+    height: 100dvh;
     width: 100%;
     
     /* FLEXBOX */
@@ -27,9 +30,9 @@
     justify-content: center;
     align-items: stretch;
 }
-.coverpage {
-    display: block;
-    height: 100vh;
+#coverpage {
+    display: none;
+    height: 100dvh;
     width: 100%;
     background-color: var(--blackish);
     color: var(--whitish);
@@ -43,25 +46,23 @@
     display: flex;
     flex-direction: column;
 }
+
 h1 {
-    font-size: 64px;
+    font-size: 4rem;
     font-weight: bold;
 }
 h3 {
-    font-size: 24px;
+    font-size: 1rem;
     font-weight: bold;
 }
 
 /* LOCAL FORMAT */
-.container {                /* ALL CONTAINERS ARE FLEXBOXES */
-    display: flex;
-}
 
 .container.scores {         /* SCOREBOX */
     
 
     /* FLEXBOX */
-    flex: 0 1 250px;
+    flex: 0 1 0;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
@@ -90,10 +91,18 @@ h3 {
     align-items: center;
 }
 
+.footer {
+    color: var(--greyLight);
+    font-size: 0.5rem;
+
+    /* FLEXBOX */
+    flex: 0 0 .75rem;
+    align-self: center;
+}
+
 .container.scoreboard {
     background-color: var(--whitish);
     color: var(--blackish);
-    height: 200px;
     border: 5px solid var(--blackish);
 
     /* FLEXBOX */
@@ -156,7 +165,7 @@ button {
     font-weight: bold;
 
     /* FLEXBOX */
-    flex: 1 1 250px;
+    flex: 1 1 0;
 }
 #namePlayer {
     color: var(--greenLight);
@@ -169,7 +178,7 @@ button {
     background-color: var(--whitish);
 
     /* FLEXBOX */
-    flex: 1 1 auto;
+    flex: 1 1 0;
     justify-content: center;
     align-items: center;
 }
@@ -177,7 +186,6 @@ button {
     text-align: center;
     font-size: 84px;
     font-weight: bold;
-    padding: 30px 0;
 
     /* FLEXBOX */
     flex: 1 1 auto;
