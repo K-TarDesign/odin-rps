@@ -105,7 +105,7 @@ h3 {
 }
 
 .container.announcement {
-    border: 5px solid var(--whitish);
+    border: 5px solid var(--whitish);   /* ANIMATION: Modify color of border & text */
     height: 175px;
 
     /* FLEXBOX */
